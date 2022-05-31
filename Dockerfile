@@ -17,4 +17,4 @@ ADD /target/*.jar app.jar
 EXPOSE 8001
 
 # 执行命令
-ENTRYPOINT ["java","-jar","/app/app.jar"]
+ENTRYPOINT ["java", "-Xms256m", "-Xmx256m", "-jar","/app/app.jar"]
